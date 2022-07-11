@@ -13,4 +13,9 @@ export class Negociacao {
         const data = new Date(this._data.getTime());
         return data;
     }
+
+    get dataFormatada(): string {
+        const data = new Date(this._data.getTime());
+        return `${data.getDate().toString().padStart(2,'0')}/${(data.getMonth() + 1).toString().padStart(2, '0')}/${data.getFullYear()}`;
+    }
 }
