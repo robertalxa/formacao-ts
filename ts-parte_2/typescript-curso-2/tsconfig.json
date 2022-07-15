@@ -3,7 +3,9 @@
         "outDir": "dist/js",
         "target": "es2017",
         "noEmitOnError": true,
-        "noImplicitAny": true
+        "noImplicitAny": true,
+        "removeComments": true,
+        "strictNullChecks": true
     },
     "include": ["app/**/*"]
 }
